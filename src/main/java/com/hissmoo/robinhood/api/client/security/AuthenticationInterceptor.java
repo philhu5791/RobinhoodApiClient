@@ -7,13 +7,13 @@ import java.io.IOException;
 
 public class AuthenticationInterceptor implements Interceptor {
 
-    private final String apiKey;
+    private final String userName;
 
-    private final String secret;
+    private final String password;
 
     public AuthenticationInterceptor(String apiKey, String secret) {
-        this.apiKey = apiKey;
-        this.secret = secret;
+        this.userName = apiKey;
+        this.password = secret;
     }
 
     @Override
